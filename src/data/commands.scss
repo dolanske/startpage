@@ -1,0 +1,89 @@
+@import "colors.scss";
+@import "fonts.scss";
+
+input {
+    @include font(400);
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    color: $c5;
+    position: relative;
+    background-color: transparent;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.line-element {
+    display: block;
+    position: relative;
+    padding-left: 2em;
+    font-size: 100%;
+    letter-spacing: 0.05em;
+
+    input {
+        letter-spacing: inherit;
+        font-size: inherit;
+    }
+
+    &:before {
+        content: ">";
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: $c4;
+    }
+}
+
+.see-block {
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    img {
+        display: block;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    h2 {
+        @include font(800);
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    strong {
+        color: $c3;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 1.6em;
+
+    }
+
+    ul {
+        list-style: none;
+
+
+        li {
+            display: block;
+            padding-left: 20px;
+            margin-bottom: 1em;
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 8px;
+                height: 8px;
+                left: 0;
+                top: 5px;
+                background-color: $c3;
+                border-radius: 50%;
+            }
+        }
+    }
+}

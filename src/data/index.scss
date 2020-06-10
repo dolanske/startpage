@@ -1,0 +1,34 @@
+@import "reset.css";
+
+@import "colors.scss";
+@import "fonts.scss";
+@import "commands.scss";
+@import "app.scss";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    @include font(400);
+    background-color: $c1;
+    color: $c5;
+    line-height: 1.4em;
+
+    h1 {
+        margin-bottom: 1.5em;
+        font-size: 1.9rem;
+        line-height: 1.5em;
+    }
+}
+
+.wrapper {
+    display: block;
+    margin: 10em auto 0;
+    width: 480px;
+}
+
+a {
+    color: $c5;
+    text-decoration: none;
+}

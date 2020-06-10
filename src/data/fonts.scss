@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'font';
+    src: url("./fonts/DejaVuSansMono.ttf") format('truetype');
+}
+
+@mixin font($weight) {
+    font-family: 'font';
+    font-weight: $weight;
+}
