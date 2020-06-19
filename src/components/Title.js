@@ -1,11 +1,12 @@
 import React from "react"
+import WeatherStatus from "./WeatherStatus"
 
 function Title() {
     const date = new Date();
 
     return (
         <div>
-            <h1>hello {getToday(date)} the {getDayNumber(date)}, the weather is {getRanWeatherDesc()}</h1>
+            <h1>hello {getToday(date)} the {getDayNumber(date)}, the weather is <WeatherStatus /></h1>
         </div>
     )
 }

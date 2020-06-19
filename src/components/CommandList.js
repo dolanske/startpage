@@ -24,6 +24,11 @@ const CommandList = [
         command: "uwu",
         desc: "Are you sick?",
     },
+    {
+        id: 6,
+        command: "weather",
+        desc: "Syntax: weather _param_ | Displays current weather and possibly a forecast for inserted town. Available parameters: _city_, here"
+    }
 ]
 
 export default CommandList
